@@ -1,6 +1,5 @@
-import styles from './styles.scss';
+import "./home.scss";
 const Home = () => {
-    return (
-        <h1>Página Home</h1> )
-}
+  return <h1>Página Home</h1>;
+};
 export default Home;

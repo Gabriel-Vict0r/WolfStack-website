@@ -1,28 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/pages/Home/Home";
-import Login from "./components/pages/Login/Login";
-import Portfolio from "./components/pages/Portfolio/Portfolio";
-import Services from "./components/pages/Services/Services";
-import Subscribe from "./components/pages/Subscribe/Subscribe";
-import TalkUs from "./components/pages/TalkUs/TalkUs";
-
+import { Outlet } from "react-router-dom";
+import NavBar from "./components/Layout/NavBar/NavBar";
+import Footer from "./components/Layout/Footer/Footer";
 function App() {
-  const [count, setCount] = useState(0);
   return (
-    <Router>
+    <div className="app">
       <NavBar />
-      <Routes>
-        <Route exact path="/home" element={<Home />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Subscribe" element={<Subscribe />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/TalkUs" element={<TalkUs />} />
-      </Routes>
+      <Outlet />
       <Footer />
-    </Router>
+    </div>
   );
 }
 
