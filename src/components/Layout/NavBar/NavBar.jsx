@@ -1,13 +1,14 @@
 import "./navbar.sass";
 import { Link } from "react-router-dom";
 import logo from "../../../image/wolfStack.svg";
+import home from "../../pages/Home/Home.jsx";
 
 //Menu de navegação
 const NavBar = () => {
   return (
     <nav className="Header">
       <h1>
-        <Link to="/Logo"> <img src={logo}/> </Link>
+        <Link to="/Logo" > <img src={logo}/></Link>
       </h1>
       <ul className="Header-list">
         <li>

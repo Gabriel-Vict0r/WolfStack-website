@@ -1,12 +1,67 @@
-// @import url(../../../scss/_conf.sass)
-// @import url(../../../scss/global.sass)
+@use '../../../scss/mixins'
+@import '../../../scss/_conf.sass'
+@import '../../../scss/global.sass'
 
 
-// .Header{
-//     display: flex
-//     &-list
-//         list-style: none
-//         li
-//             list-style-type: none    
-// }
-            
+.Container-Footer
+   width: 80%
+   margin: auto
+
+   hr
+      margin: 1.5rem
+
+   .Footer-Contant
+      display: grid
+      grid-template-columns: 1fr 2fr
+      
+      .Footer-Sociais
+         text-align: center
+
+         .Footer-Logo-Name
+            padding: .3rem
+            width: 62%
+
+         .Footer-Icon
+            width: 15%
+            padding: .1rem
+            margin: 0 .5rem
+
+      .Footer-Info
+         display: grid
+         grid-template-columns: 1fr 1fr
+         width: 90%
+         margin: auto
+         text-align: center
+
+         .Footer-Empresa
+            // text-align: center
+
+
+            h3
+               color: #6C63FF
+               font-size: 18pt
+
+            p
+               color: #A7A2F9
+               font-size: 12pt
+         
+         .Footer-Novidades
+            // text-align: right
+
+
+            h3
+               color: #6C63FF
+               font-size: 18pt
+
+            p
+               color: #A7A2F9
+               font-size: 12pt
+
+.Footer-Bottom
+   color: #A7A2F9
+   font-size: 18pt
+   display: flex
+   justify-content: space-around
+   padding: 2rem 0
+
+   

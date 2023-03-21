@@ -1,0 +1,92 @@
+@use '../../../scss/_mixins.sass';
+//importações
+@import '../../../scss/_conf.sass';
+@import '../../../scss/global.sass';
+
+
+body{
+   background-color: #121212;
+}
+
+.welcome-container{
+   display: flex;
+   justify-content: space-around;
+   margin: auto;
+   padding: 2rem;
+}
+
+.text-welcome{
+   padding: 10% 1rem;
+
+}
+
+.text-welcome h2{
+   color: #BB86FC;
+   font-size: 44pt;
+}
+
+.text-welcome p{
+   color: #fff;
+   font-size: 32pt;
+}
+
+.welcome-span{
+   color: #03DAC5;
+}
+
+.image-welcome{
+   width: 32%;
+
+}
+
+.welcome-info{
+   display: flex;
+   padding: 3rem;
+}
+
+.wolf-info {
+   padding: 1rem 2rem;
+   margin: auto;
+}
+
+.wolf-info h3{
+   font-size: 20pt;
+   color: #fff;
+   margin-bottom: 12pt;
+
+}
+
+.wolf-info p{
+   font-size: 16pt;
+   color: #d0d0d0;
+   text-align: justify;
+   
+}
+
+.Second-Home-Section{
+   display: flex;
+   justify-content: center;
+   width: 90%;
+   padding: 2rem;
+   margin: auto;
+}
+
+.Second-Home-Section .Text-Second-Section h2{
+   color: #6C63FF;
+   font-size: 26pt;
+
+}
+
+.Second-Home-Section .Text-Second-Section p{
+   color: #e7e7e7;
+   font-size: 18pt;
+   padding: 1rem 0;
+   width: 70%;
+
+   
+}
+
+.Second-Home-Section img{
+   width: 40%;
+   
+}
